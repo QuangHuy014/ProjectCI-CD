@@ -46,12 +46,12 @@ pipeline {
         stage('Deploy Spring Boot to DEV') {
             steps {
                 echo 'Deploying and cleaning'
-                sh 'docker image pull quanghuy/springboot'
+                sh 'docker image pull huynq201104/springboot'
                 sh 'docker container stop quanghuy-springboot || echo "this container does not exist" '
                 sh 'docker network create dev || echo "this network exists"'
                 sh 'echo y | docker container prune '
 
-                sh 'docker container run -d --rm --name quanghuy-springboot -p 8080:6868 --network dev quanghuy/springboot'
+                sh 'docker container run -d --rm --name quanghuy-springboot -p 8080:6868 --network dev huynq201104/springboot'
             }
         }
  
