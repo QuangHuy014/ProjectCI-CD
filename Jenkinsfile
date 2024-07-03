@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     tools { 
-        maven 'my-maven' 
+        maven 'my_maven' 
     }
     environment {
         MYSQL_ROOT_LOGIN = credentials('mysql-quanghuy-account')
