@@ -81,6 +81,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
+        <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.28</version> <!-- Thay phiên bản tùy theo version của MySQL bạn đang sử dụng -->
+</dependency>
+
     </dependencies>
     <build>
         <plugins>
