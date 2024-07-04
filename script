@@ -1,8 +1,10 @@
+CREATE DATABASE Planny;
 CREATE USER 'quanghuy'@'%' IDENTIFIED BY '12345';
 GRANT ALL PRIVILEGES ON Planny.* TO 'quanghuy'@'%';
 FLUSH PRIVILEGES;
 
-use [Planny]
+
+use Planny;
 go
 
 ----- CREATE TABLE PHASE -----
