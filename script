@@ -1,12 +1,7 @@
 CREATE USER 'quanghuy'@'%' IDENTIFIED BY '12345';
 GRANT ALL PRIVILEGES ON Planny.* TO 'quanghuy'@'%';
 FLUSH PRIVILEGES;
-use master
-go
-drop database if exists [Planny]
-go
-create database [Planny]
-go
+
 use [Planny]
 go
 
